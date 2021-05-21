@@ -1,11 +1,60 @@
-header {
-  background: #28323C
-  color: #fff;
-  text-transform: uppercase;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  color: #000016
 }
 
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+header,
+.intro,
+footer {
+  text-align: center;
+}
+
+header {
+  background-color: #28323C;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.thik,
+.thin {
+  background-color: #000016;
+  margin: 0 1rem 4px;
+}
+
+.thik {
+  height: 5px;
+}
+
+.thin {
+  height: 3px;
+}
+
+input,
+select {
+  display: block;
+  width: 100%
+}
+
+.zip {
+  width: 50%;
 }
