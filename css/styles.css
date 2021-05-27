@@ -24,37 +24,101 @@ header {
   background-color: #28323C;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   height: 4rem;
   display: flex;
   align-items: center;
 }
 
 h1 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+h1 + p {
+  color: #A0A5AA;
+  font-weight: 300;
+  font-size: .8rem;
+  margin: 1rem 2rem 2.2rem;
 }
 
 .thik,
 .thin {
   background-color: #000016;
-  margin: 0 1rem 4px;
+  margin: 0 1rem 3px;
 }
 
 .thik {
-  height: 5px;
+  height: 4px;
 }
 
 .thin {
-  height: 3px;
+  height: 2px;
+  margin-bottom: 1.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.basic-label {
+  font-weight: 300;
+  font-size: .9rem;
+  color: #626f7b;
 }
 
 input,
-select {
+select,
+textarea {
   display: block;
-  width: 100%
+  width: 100%;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ECEEEF;
+
+}
+
+/* This isn't right */
+:focus {
+  border: 2px solid blue;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width:auto;
 }
 
 .zip {
   width: 50%;
+}
+
+input[type="submit"] {
+  background-color: #3FB3AC;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  margin: 2rem 0 .5rem;
+  padding: 1.2rem;
+}
+
+footer {
+  font-size: .75rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #A0A5AA;
+
+  margin-bottom: 5rem;
 }
