@@ -119,12 +119,19 @@ input[type="radio"] {
 }
 
 ::placeholder,
+select,
 footer {
-  font-size: .75rem;
   font-weight: 300;
-  font-style: italic;
   color: #A0A5AA;
 }
+
+
+::placeholder,
+footer {
+  font-size: .75rem;
+  font-style: italic;
+}
+
 
 option:first-child {
   color: #A0A5AA;
