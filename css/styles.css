@@ -3,14 +3,13 @@
 }
 
 html {
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
+  font: 16px 'Merriweather', serif;
   color: #000016
+
 }
 
 .container {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -20,23 +19,32 @@ footer {
   text-align: center;
 }
 
+header,
+input[type="submit"] {
+    color: #fff;
+}
+
 header {
   background-color: #28323C;
-  color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.1rem;
   height: 4rem;
   display: flex;
   align-items: center;
 }
 
-h1 {
-  font-size: 1.1rem;
+header,
+h1,
+legend,
+input[type="submit"] {
   font-weight: 700;
+  font-size: 1.1rem;
+}
+
+h1 {
   margin-top: 2rem;
 }
 
+/* That following paragraph */
 h1 + p {
   color: #A0A5AA;
   font-weight: 300;
@@ -64,8 +72,6 @@ fieldset {
 }
 
 legend {
-  font-weight: 700;
-  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -109,11 +115,15 @@ input[type="radio"] {
 
 /* Tom: Remember this genius pseudoclass! */
 ::placeholder {
-  color: #A0A5AA;
+  text-align: right;
+}
+
+::placeholder,
+footer {
   font-size: .75rem;
   font-weight: 300;
   font-style: italic;
-  text-align: right;
+  color: #A0A5AA;
 }
 
 .zip {
@@ -122,19 +132,51 @@ input[type="radio"] {
 
 input[type="submit"] {
   background-color: #3FB3AC;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.2rem;
-
   margin: 2rem 0 .5rem;
   padding: 1.2rem;
 }
 
 footer {
-  font-size: .75rem;
-  font-style: italic;
-  font-weight: 300;
-  color: #A0A5AA;
-
   margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px){
+
+/* best guess for width, based on mockup */
+  .container {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 4.25rem;
+  }
+
+  h1 + p {
+    font-size: .9rem;
+  }
+
+  .zip {
+    width: 25%;
+  }
+
+  fieldset:first-child {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 75%;
+  }
+
+  fieldset:first-child label {
+    width: 25%;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+
+/* /media Q */
 }
