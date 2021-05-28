@@ -126,6 +126,12 @@ footer {
   color: #A0A5AA;
 }
 
+option:first-child {
+  color: #A0A5AA;
+  font-weight: 300;
+}
+
+
 .zip {
   width: 50%;
 }
@@ -152,12 +158,13 @@ footer {
     margin-top: 4.25rem;
   }
 
-  h1 + p {
+  h1 + p,
+  footer {
     font-size: .9rem;
   }
 
-  .zip {
-    width: 25%;
+  .thin {
+    margin-bottom: 3rem;
   }
 
   fieldset:first-child {
@@ -165,10 +172,14 @@ footer {
     flex-wrap: wrap;
   }
 
-  input,
-  select,
-  textarea {
+  /* don't change width of submit button */
+  fieldset:first-child input,
+  select {
     width: 75%;
+  }
+
+  fieldset:first-child input.zip {
+    width: 25%;
   }
 
   fieldset:first-child label {
