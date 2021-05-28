@@ -90,6 +90,10 @@ textarea {
 
 }
 
+textarea {
+  margin-top: 1rem;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -100,6 +104,7 @@ input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
   width:auto;
+  margin-right: .75rem;
 }
 
 /* Tom: Remember this genius pseudoclass! */
